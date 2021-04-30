@@ -1,1 +1,1 @@
-Downloaded from http://chronux.org/
+MATLAB package for spectral analysis. Downloaded from http://chronux.org/
