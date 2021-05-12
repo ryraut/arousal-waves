@@ -1,9 +1,9 @@
 # Arousal waves
 MATLAB code and data files related to Raut et al. 2021
 
-Dependencies include the following software packages:
-HCP Connectome Workbench: https://www.humanconnectome.org/software/connectome-workbench
-Chronux: http://chronux.org/
+Dependencies include the following software packages: \
+HCP Connectome Workbench: https://www.humanconnectome.org/software/connectome-workbench \
+Chronux: http://chronux.org/ \
 SUIT: http://www.diedrichsenlab.org/imaging/suit.htm (for cerebellum flat maps only)
 
 Add files in "supporting_files" to path
