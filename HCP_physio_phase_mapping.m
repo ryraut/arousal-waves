@@ -128,6 +128,6 @@ end
 % save('network_sigs_ctx_all.mat','ctx_signals','-v7.3')
 % save('network_sigs_str_all.mat','str_signals','-v7.3')
 % save('network_sigs_thal_all.mat','thal_signals','-v7.3')
-% save('network_sigs_cbm_all.mat','cmb_signals','-v7.3')
+% save('network_sigs_cbm_all.mat','cbm_signals','-v7.3')
 
 %save('RV_PLVs.mat','plvs','-v7.3');
