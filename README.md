@@ -12,6 +12,6 @@ NeuroTycho: http://neurotycho.org/anesthesia-and-sleep-task
 
 Add files in "supporting_files" to path
 
-Begin with HCP_physio_phase_mapping.m, which outputs the phase-locking value result as well as intermediate files to use in other scripts (e.g., coherence_spectra.m)
+Begin with physio_phase_mapping.m, which outputs the phase-locking value result as well as intermediate files to use in other scripts (e.g., coherence_spectra.m)
 
 **Please direct any questions to ryanvraut@gmail.com**
