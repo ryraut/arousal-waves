@@ -7,7 +7,7 @@ Chronux: http://chronux.org/ \
 SUIT: http://www.diedrichsenlab.org/imaging/suit.htm (for cerebellum flat maps only)
 
 And freely available datasets: \
-HCP S1200 release: https://www.humanconnectome.org/study/hcp-young-adult/article/s1200-group-average-data-release
+HCP S1200 release: https://www.humanconnectome.org/study/hcp-young-adult/article/s1200-group-average-data-release \
 NeuroTycho: http://neurotycho.org/anesthesia-and-sleep-task
 
 Add files in "supporting_files" to path
