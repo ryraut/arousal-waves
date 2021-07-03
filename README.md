@@ -15,9 +15,9 @@ Chronux: http://chronux.org/ \
 * **Dependencies** folder includes code for reading and writing CIFTI files, pulled from the FieldTrip toolbox
 * **surface_files** folder includes Conte69 atlas files for standard 32k and 4k (for optical flow analysis) meshes
 * **supporting_files** folder includes:
-  * Handy structure-specific masks for neocortex, thalamus, striatum, cerebellum, and hippocampus, based on the standard 91282 grayordinate representation \
-  * List of subject IDs used in the paper (originally used in [Chen et al. 2020 Neuroimage](https://www.sciencedirect.com/science/article/pii/S1053811920301944)) \
-  * Yeo 7-network parcellation spanning cerebral cortex, thalamus, striatum, and cerebellum) (see paper for relevant citations) \
+  * Handy structure-specific masks for neocortex, thalamus, striatum, cerebellum, and hippocampus, based on the standard 91282 grayordinate representation
+  * List of subject IDs used in the paper (originally used in [Chen et al. 2020 Neuroimage](https://www.sciencedirect.com/science/article/pii/S1053811920301944))
+  * Yeo 7-network parcellation spanning cerebral cortex, thalamus, striatum, and cerebellum) (see paper for relevant citations)
 * **output_files** folder includes:
   * vertex/voxelwise maps of phase shifts in relation to respiratory time series (averaged across subjects and sessions)
   * the average BOLD signal changes mapped to a canonical respiratory variation cycle
