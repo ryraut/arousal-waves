@@ -3,15 +3,15 @@ MATLAB code and data files related to Raut et al. 2021 Science Advances
 
 ## Dependencies (all freely available)
 ### Software packages:
-Chronux: http://chronux.org/ \
+[Chronux](http://chronux.org/) \
 [HCP Connectome Workbench](https://www.humanconnectome.org/software/connectome-workbench) \
 [SUIT](http://www.diedrichsenlab.org/imaging/suit.htm) (for cerebellum flat map visualization only)
 
-### Datasets:
+### Datasets
 [HCP S1200 release](https://www.humanconnectome.org/study/hcp-young-adult/article/s1200-group-average-data-release) \
 [NeuroTycho](http://neurotycho.org/anesthesia-and-sleep-task)
 
-## Overview:
+## Overview
 * **Dependencies** folder includes code for reading and writing CIFTI files, pulled from the FieldTrip toolbox
 * **surface_files** folder includes Conte69 atlas files for standard 32k and 4k (for optical flow analysis) meshes
 * **supporting_files** folder includes:
