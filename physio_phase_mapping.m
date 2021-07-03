@@ -3,7 +3,7 @@ wb_dir = 'XX/workbench/bin_rh_linux64'; % set HCP Workbench directory
 outdir = ''; % set directory for saving out images here
 
 % Set parameters
-num_nodes = 91282;
+num_nodes = 91282; % HCP standard 2mm "grayordinates"
 tr = .72; % sampling interval (s)
 Fs = 1/tr; % sampling rate (Hz)
 num_frames = 1191;
@@ -88,9 +88,7 @@ for s = 1:numel(subjects)
         end
         
         physio_ds = physio_ds(5:end-5);
-        BOLD = BOLD(5:end-5,:);
-        physio_ds = [0;diff(physio_ds)];
-        
+        BOLD = BOLD(5:end-5,:);        
 
         % Get mean network signals
         if size(BOLD,1)~=1191, continue, end

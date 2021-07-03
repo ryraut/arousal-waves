@@ -1,6 +1,6 @@
 %% Setup
 
-% import files
+% Import files
 root_dir = ''; % directory containing outputs from "HCP_physio_mapping.m"
 physios = reshape(importdata([root_dir '/RV_all.mat']),1191,[]);
 globals = importdata([root_dir '/ctx_sigs_all.mat']);globals=reshape(globals(:,8,:,:),1191,[]);
@@ -24,12 +24,13 @@ globals2 = [globals(d+1:end,:);zeros(d,size(globals,2));];
 [C,phi_global,S12,S1,S2,f] = coherencyc(globals2,physios,struct);
 
 %% Plot coherence spectra
-yeo_cmap = [120,18,134;70,130,180;0,118,14;196,58,250;220,248,164;230,148,34;205,62,78]/255;
+yeo_cmap = [120,18,134;70,130,180;0,118,14;196,58,250;220,248,164;230,148,34;205,62,78]/255; % Color map for Yeo 7-network parcellation
+
 figure;hold
 set(gca,'fontsize',20,'fontweight','bold')
 ax = gca;
 ax.LineWidth = 2;
-for n = [2,4,6,7] % Yeo 7: Motor,CON,FPC,DMN
+for n = [2,4,6,7] % Yeo 7: Motor,CON,FPC,DMN (networks well-represented across all structures)
     tic
     net_sigs = importdata([root_dir '/ctx_sigs_all.mat']);net_sigs=reshape(net_sigs(:,n,:,:),1191,[]);
     net_sigs = net_sigs(:,~nanmask);
