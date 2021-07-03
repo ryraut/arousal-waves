@@ -7,15 +7,15 @@ Chronux: http://chronux.org/ \
 [HCP Connectome Workbench](https://www.humanconnectome.org/software/connectome-workbench) \
 [SUIT](http://www.diedrichsenlab.org/imaging/suit.htm) (for cerebellum flat map visualization only)
 
-### Datasets: \
+### Datasets:
 [HCP S1200 release](https://www.humanconnectome.org/study/hcp-young-adult/article/s1200-group-average-data-release) \
 [NeuroTycho](http://neurotycho.org/anesthesia-and-sleep-task)
 
-## Overview: \
+## Overview:
 
 * **Dependencies** folder includes code for reading and writing CIFTI files, pulled from the FieldTrip toolbox \
 * **surface_files** folder includes Conte69 atlas files for standard 32k and 4k (for optical flow analysis) meshes \
-* **Supporting files** folder includes: \
+* **supporting_files** folder includes: \
 ..* Handy structure-specific masks for neocortex, thalamus, striatum, cerebellum, and hippocampus, based on the standard 91282 grayordinate representation \
 ..* List of subject IDs used in the paper (originally used in [Chen et al. 2020 Neuroimage](https://www.sciencedirect.com/science/article/pii/S1053811920301944)) \
 ..* Yeo 7-network parcellation spanning cerebral cortex, thalamus, striatum, and cerebellum) (see paper for relevant citations) \
