@@ -12,9 +12,8 @@ Chronux: http://chronux.org/ \
 [NeuroTycho](http://neurotycho.org/anesthesia-and-sleep-task)
 
 ## Overview:
-
-* **Dependencies** folder includes code for reading and writing CIFTI files, pulled from the FieldTrip toolbox \
-* **surface_files** folder includes Conte69 atlas files for standard 32k and 4k (for optical flow analysis) meshes \
+* **Dependencies** folder includes code for reading and writing CIFTI files, pulled from the FieldTrip toolbox
+* **surface_files** folder includes Conte69 atlas files for standard 32k and 4k (for optical flow analysis) meshes
 * **supporting_files** folder includes:
   * Handy structure-specific masks for neocortex, thalamus, striatum, cerebellum, and hippocampus, based on the standard 91282 grayordinate representation \
   * List of subject IDs used in the paper (originally used in [Chen et al. 2020 Neuroimage](https://www.sciencedirect.com/science/article/pii/S1053811920301944)) \
