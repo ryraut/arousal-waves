@@ -86,7 +86,7 @@ for r = 1:length(runs)
     
     filt_data = filtfilt(b1,a1,double(raw_data));
     filt_data = filtfilt(b2,a2,filt_data);
-    filt_data = filtfilt(b3,a3,filt_data.^2);
+    filt_data = filtfilt(b3,a3,abs(hilbert(filt_data))); % hilbert envelope
     
     %
     format(1:10000) = false;
@@ -96,3 +96,36 @@ for r = 1:length(runs)
 end
 
 %save([outdir '/' monkey '_' label1 '_FC_mats.mat'],corr_mats,'-v7.3')
+
+
+%% Diffusion embedding
+load('ChibiMap.mat');
+%load('GeorgeMap.mat');
+FCmat = tanh(nanmean(atanh(corr_mats),3)); % Fisher z transform before averaging
+
+alpha = .5;
+good = ~isnan(FCmat(:,1));
+FCmat = FCmat(good,good);
+FCmat = bsxfun(@rdivide,FCmat,sqrt(sum(FCmat.^2,2)));
+FCmat = FCmat*FCmat';
+%FCmat(FCmat<0) = 0;
+%FCmat(FCmat>1) = 1;
+FCmat = 1-acos(FCmat)/pi;
+L = FCmat;
+D = sum(L,2).^-alpha;
+Lalpha = L.*(D*D'); % normalized graph Laplacian
+Dalpha = sum(Lalpha,2);
+M = bsxfun(@rdivide,Lalpha,Dalpha);
+[maps,S,~] = svd(M);
+
+map = nan(128,1);
+map(good) = maps(:,2);
+
+figure
+image(I);axis equal
+hold on
+scatter(X,Y,50,map,'filled','linewidth',2); % 50 window, 300 full screen
+axis off
+
+colormap(magma)
+
