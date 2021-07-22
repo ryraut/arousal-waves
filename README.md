@@ -28,8 +28,5 @@ Add files in "supporting_files" to path
 
 Begin with physio_phase_mapping.m, which outputs the phase-locking value result as well as intermediate files to use in other scripts (e.g., coherence_spectra.m)
 
-All code for monkey analyses is contained within scripts having "monkey" prefix
-
-
 
 **Please direct any questions to ryanvraut@gmail.com**
