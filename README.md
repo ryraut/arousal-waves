@@ -1,5 +1,5 @@
 # Arousal waves
-MATLAB code and data files related to Raut et al. 2021 Science Advances
+MATLAB code and data files related to ["Global waves synchronize the brain's functional systems with fluctuating arousal."](https://advances.sciencemag.org/content/7/30/eabf2709)
 
 ## Overview
 * **dependencies** folder includes code for reading and writing CIFTI files, pulled from the FieldTrip toolbox
